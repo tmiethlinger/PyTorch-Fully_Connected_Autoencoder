@@ -10,7 +10,7 @@ The following implementation an autoencoder uses fully connected layers. Among o
 
 The class FullyConnectedAutoencoder defines the following methods:
 
-* __init__ (constructor)
+* constructor
 * encode (maps from input space to code space)
 * decode (maps from code space to output space)
 * forward (concatenation of encode and decode)
