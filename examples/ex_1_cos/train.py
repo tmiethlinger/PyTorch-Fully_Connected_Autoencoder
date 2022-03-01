@@ -40,6 +40,8 @@ Xtest = Xtestraw
 
 for i in range(5):
     plt.plot(Xtrain[i])
+    plt.xlabel("element i")
+    plt.ylabel("$f_i$")
 plt.show()
 
 # Create torch.Tensor and torch.utils.data.dataset.TensorDataset for training
@@ -59,7 +61,7 @@ batch_size = int(m_train / 2)
 # Learning Rate
 lr = 1e-3
 # Number of learning epochs
-num_epochs = 20000
+num_epochs = 30000
 
 fcae = module_fcae.FullyConnectedAutoencoder(layer_widths, activation_function, seed)
 
